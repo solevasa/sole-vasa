@@ -7,11 +7,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solé Vasa | Flower Shop & Botanik i Vasastan</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <style>
     :root {
       --bg-vanilla: #FAF8F5;
@@ -23,13 +21,10 @@
       --peach-hover: #DF9F82;
       --border-color: #EAE5DA;
       --max-w: 1140px;
-
       --font-heading: 'Italiana', serif;
       --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       background-color: var(--bg-vanilla);
       color: var(--text-main);
@@ -37,13 +32,11 @@
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
     }
-
     h1, h2, h3 {
       font-family: var(--font-heading);
       letter-spacing: 0.03em;
       font-weight: 400;
     }
-
     header {
       background: var(--bg-vanilla);
       border-bottom: 1px solid var(--border-color);
@@ -51,7 +44,6 @@
       top: 0;
       z-index: 1000;
     }
-
     .nav-inner {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -61,7 +53,6 @@
       align-items: center;
       gap: 0.75rem;
     }
-
     .brand-box {
       display: flex;
       flex-direction: column;
@@ -70,27 +61,16 @@
       color: var(--text-main);
       gap: 0.45rem;
     }
-
-    .flower-logo-img {
-      width: 54px;
-      height: 54px;
+    .brand-logo-img {
+      height: clamp(65px, 8vw, 95px);
+      width: auto;
       object-fit: contain;
       display: block;
-      margin-bottom: 0.2rem;
       transition: transform 0.25s ease;
     }
-
-    .brand-box:hover .flower-logo-img {
-      transform: scale(1.05);
+    .brand-box:hover .brand-logo-img {
+      transform: scale(1.02);
     }
-
-    .brand-title {
-      font-family: var(--font-heading);
-      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
-      letter-spacing: 0.08em;
-      line-height: 1;
-    }
-
     .header-instagram {
       display: inline-flex;
       align-items: center;
@@ -103,11 +83,9 @@
       font-weight: 600;
       transition: opacity 0.2s ease;
     }
-
     .header-instagram:hover {
       opacity: 0.8;
     }
-
     .brand-sub {
       font-family: var(--font-body);
       font-size: 0.88rem;
@@ -117,7 +95,6 @@
       font-weight: 600;
       margin-top: 0.1rem;
     }
-
     nav {
       display: flex;
       gap: 1.5rem;
@@ -125,7 +102,6 @@
       justify-content: center;
       margin-top: 0.4rem;
     }
-
     nav a {
       font-size: 0.78rem;
       letter-spacing: 0.15em;
@@ -135,11 +111,9 @@
       font-weight: 500;
       transition: color 0.2s ease;
     }
-
     nav a:hover {
       color: var(--accent-orange);
     }
-
     .hero {
       position: relative;
       height: 70vh;
@@ -151,7 +125,6 @@
       color: #FFFFFF;
       overflow: hidden;
     }
-
     .hero-img {
       position: absolute;
       inset: 0;
@@ -161,7 +134,6 @@
       object-position: center;
       filter: brightness(0.78);
     }
-
     .hero-content {
       position: relative;
       z-index: 2;
@@ -169,7 +141,6 @@
       padding: 2rem;
       text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
     }
-
     .hero-tag {
       font-size: 0.75rem;
       letter-spacing: 0.26em;
@@ -179,13 +150,11 @@
       font-weight: 300;
       color: var(--bg-vanilla);
     }
-
     .hero h1 {
       font-size: clamp(2.4rem, 5vw, 4rem);
       line-height: 1.2;
       margin-bottom: 2rem;
     }
-
     .btn-minimal {
       display: inline-block;
       border: 1px solid var(--bg-vanilla);
@@ -201,19 +170,16 @@
       transition: all 0.3s ease;
       font-weight: 400;
     }
-
     .btn-minimal:hover {
       background: var(--accent-orange);
       border-color: var(--accent-orange);
       color: #FFFFFF;
     }
-
     /* OM OSS SEKTION MED BILD */
     .about-section {
       width: 100%;
       padding: 6.5rem 2rem 5rem;
     }
-
     .about-inner {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -222,7 +188,6 @@
       align-items: center;
       gap: 4rem;
     }
-
     .about-image-wrap {
       width: 100%;
       aspect-ratio: 4 / 5;
@@ -230,20 +195,17 @@
       border-radius: 2px;
       background: var(--bg-card);
     }
-
     .about-image-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
-
     .about-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-
     .intro-tag {
       font-size: 0.76rem;
       letter-spacing: 0.22em;
@@ -253,14 +215,12 @@
       margin-bottom: 0.6rem;
       display: block;
     }
-
     .about-content h2 {
       font-size: clamp(2.2rem, 3.5vw, 3.2rem);
       line-height: 1.2;
       margin-bottom: 1.4rem;
       color: var(--text-main);
     }
-
     .about-content p {
       font-size: 1.05rem;
       color: var(--text-muted);
@@ -268,7 +228,6 @@
       margin-bottom: 1.2rem;
       font-weight: 300;
     }
-
     .category-grid {
       max-width: var(--max-w);
       margin: 0 auto 7.5rem;
@@ -277,7 +236,6 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 2.8rem 2.2rem;
     }
-
     .category-card {
       display: flex;
       flex-direction: column;
@@ -286,7 +244,6 @@
       cursor: pointer;
       position: relative;
     }
-
     .card-img-wrap {
       aspect-ratio: 4 / 5;
       overflow: hidden;
@@ -295,7 +252,6 @@
       margin-bottom: 1.2rem;
       pointer-events: none;
     }
-
     .card-img-wrap img {
       width: 100%;
       height: 100%;
@@ -303,11 +259,9 @@
       transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
       display: block;
     }
-
     .category-card:hover .card-img-wrap img {
       transform: scale(1.04);
     }
-
     .card-title {
       font-size: 1.6rem;
       margin-bottom: 0.3rem;
@@ -315,11 +269,9 @@
       pointer-events: none;
       transition: color 0.2s ease;
     }
-
     .category-card:hover .card-title {
       color: var(--accent-orange);
     }
-
     .card-desc {
       font-size: 0.84rem;
       color: var(--text-muted);
@@ -328,7 +280,6 @@
       line-height: 1.6;
       pointer-events: none;
     }
-
     .btn-category {
       align-self: flex-start;
       display: inline-block;
@@ -345,13 +296,11 @@
       transition: all 0.25s ease;
       pointer-events: none;
     }
-
     .category-card:hover .btn-category {
       background-color: var(--peach-hover);
       transform: translateY(-1px);
       box-shadow: 0 4px 12px rgba(223, 159, 130, 0.35);
     }
-
     .artists-section {
       background: var(--bg-card);
       border-top: 1px solid var(--border-color);
@@ -359,19 +308,16 @@
       padding: 5.5rem 2rem;
       margin-bottom: 6rem;
     }
-
     .artists-inner {
       max-width: var(--max-w);
       margin: 0 auto;
       text-align: center;
     }
-
     .section-title {
       font-size: 2.6rem;
       margin-bottom: 0.4rem;
       color: var(--text-main);
     }
-
     .section-subtitle {
       font-size: 0.76rem;
       letter-spacing: 0.2em;
@@ -380,20 +326,17 @@
       margin-bottom: 3.5rem;
       font-weight: 500;
     }
-
     .artists-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 1.8rem;
     }
-
     .artist-card {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
-
     .artist-img-wrap {
       width: 105px;
       height: 105px;
@@ -404,20 +347,17 @@
       border: 2px solid #FFFFFF;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
-
     .artist-img-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-
     .artist-name {
       font-family: var(--font-heading);
       font-size: 1.25rem;
       color: var(--text-main);
       margin-bottom: 0.2rem;
     }
-
     .artist-role {
       font-size: 0.72rem;
       letter-spacing: 0.12em;
@@ -425,7 +365,6 @@
       color: var(--text-muted);
       margin-bottom: 0.5rem;
     }
-
     .artist-email {
       font-size: 0.78rem;
       color: var(--accent-orange);
@@ -433,12 +372,10 @@
       word-break: break-all;
       transition: color 0.2s ease;
     }
-
     .artist-email:hover {
       color: var(--text-main);
       text-decoration: underline;
     }
-
     .store-details {
       max-width: var(--max-w);
       margin: 0 auto 7.5rem;
@@ -448,13 +385,11 @@
       gap: 4rem;
       align-items: start;
     }
-
     .store-details h2 {
       font-size: 2.6rem;
       margin-bottom: 1rem;
       color: var(--text-main);
     }
-
     .contact-list {
       list-style: none;
       margin-top: 2rem;
@@ -462,7 +397,6 @@
       flex-direction: column;
       gap: 1.8rem;
     }
-
     .contact-label {
       display: block;
       font-size: 0.72rem;
@@ -472,13 +406,11 @@
       margin-bottom: 0.35rem;
       font-weight: 600;
     }
-
     .phone-box {
       display: flex;
       flex-direction: column;
       gap: 0.35rem;
     }
-
     .phone-box a {
       font-family: var(--font-body);
       font-size: 1.35rem;
@@ -488,11 +420,9 @@
       text-decoration: none;
       transition: color 0.2s ease;
     }
-
     .phone-box a:hover {
       color: var(--accent-orange);
     }
-
     .phone-type {
       font-size: 0.76rem;
       color: var(--text-muted);
@@ -501,18 +431,15 @@
       letter-spacing: 0.08em;
       margin-right: 0.4rem;
     }
-
     .contact-val-simple {
       font-family: var(--font-body);
       font-size: 1.05rem;
       color: var(--text-main);
       text-decoration: none;
     }
-
     .contact-val-simple:hover {
       color: var(--accent-orange);
     }
-
     .contact-guide-box {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -520,13 +447,11 @@
       padding: 2.8rem 2.4rem;
       border-radius: 2px;
     }
-
     .contact-guide-box h3 {
       font-size: 2.1rem;
       margin-bottom: 0.6rem;
       color: var(--text-main);
     }
-
     .contact-guide-box p {
       color: var(--text-muted);
       font-size: 0.96rem;
@@ -534,7 +459,6 @@
       font-weight: 300;
       line-height: 1.7;
     }
-
     .guide-checklist {
       list-style: none;
       margin-bottom: 2.2rem;
@@ -546,7 +470,6 @@
       flex-direction: column;
       gap: 0.6rem;
     }
-
     .guide-checklist li {
       font-size: 0.88rem;
       color: var(--text-muted);
@@ -554,20 +477,17 @@
       align-items: center;
       gap: 0.6rem;
     }
-
     .guide-checklist li::before {
       content: "•";
       color: var(--accent-orange);
       font-size: 1.4rem;
       line-height: 0;
     }
-
     .action-buttons {
       display: flex;
       flex-direction: column;
       gap: 0.9rem;
     }
-
     .btn-mail-action {
       display: block;
       text-align: center;
@@ -582,12 +502,10 @@
       font-weight: 500;
       transition: background-color 0.2s ease;
     }
-
     .btn-mail-action:hover {
       background: var(--accent-orange);
       color: #FFFFFF;
     }
-
     .btn-call-action {
       display: block;
       text-align: center;
@@ -603,12 +521,10 @@
       font-weight: 500;
       transition: all 0.2s ease;
     }
-
     .btn-call-action:hover {
       background: var(--text-main);
       color: var(--bg-vanilla);
     }
-
     footer {
       border-top: 1px solid var(--border-color);
       padding: 4rem 2rem 3rem;
@@ -619,14 +535,12 @@
       text-transform: uppercase;
       font-weight: 300;
     }
-
     @media (max-width: 960px) {
       .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .category-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
       .artists-grid { grid-template-columns: repeat(3, 1fr); }
       .store-details { grid-template-columns: 1fr; gap: 3rem; }
     }
-
     @media (max-width: 640px) {
       .category-grid { grid-template-columns: 1fr; }
       .artists-grid { grid-template-columns: repeat(2, 1fr); }
@@ -635,18 +549,15 @@
   </style>
 </head>
 <body>
-
   <header>
     <div class="nav-inner">
       <div class="brand-box">
         <a href="/" style="display:flex; flex-direction:column; align-items:center; text-decoration:none; color:inherit;">
-          <img 
-            src="/flower.png" 
-            alt="Solé Vasa" 
-            class="flower-logo-img" 
-            onerror="this.style.display='none'"
+          <img
+            src="/solevasa.png"
+            alt="Solé Vasa"
+            class="brand-logo-img"
           />
-          <span class="brand-title">Solé Vasa</span>
         </a>
         <a href="https://instagram.com/sole.vasa" target="_blank" rel="noopener" class="header-instagram">
           @sole.vasa
@@ -666,7 +577,6 @@
       </nav>
     </div>
   </header>
-
   <main>
     <section class="hero">
       <img src="/blommor.jpeg" alt="Solé Vasa blomsterarrangemang" class="hero-img" />
@@ -676,7 +586,6 @@
         <a href="#kontakt" class="btn-minimal">Beställ Bukett</a>
       </div>
     </section>
-
     <!-- OM OSS SEKTION MED BILD -->
     <section id="om-oss" class="about-section">
       <div class="about-inner">
@@ -695,7 +604,6 @@
         </div>
       </div>
     </section>
-
     <!-- 6 KATEGORIKORT -->
     <section class="category-grid">
       <a href="/buketter" class="category-card">
@@ -704,35 +612,30 @@
         <p class="card-desc">Handplockade snittblommor med vilda och naturliga former.</p>
         <span class="btn-category">Se buketter &amp; priser &rarr;</span>
       </a>
-
       <a href="/brollop-och-fest" class="category-card">
         <div class="card-img-wrap"><img src="/brollop_bukett.JPG" alt="Bröllop och Fest" /></div>
         <h2 class="card-title">Bröllop &amp; Fest</h2>
         <p class="card-desc">Skräddarsydd blomsterdesign för livets största stunder.</p>
         <span class="btn-category">Se bröllop &amp; priser &rarr;</span>
       </a>
-
       <a href="/vaxter" class="category-card">
         <div class="card-img-wrap"><img src="/vaxt5.jpeg" alt="Växter" /></div>
         <h2 class="card-title">Växter</h2>
         <p class="card-desc">Kurerade gröna krukväxter, sticklingar och handgjord keramik.</p>
         <span class="btn-category">Se växter &amp; krukor &rarr;</span>
       </a>
-
       <a href="/workshops" class="category-card">
         <div class="card-img-wrap"><img src="/blomma5.jpeg" alt="Workshops" /></div>
         <h2 class="card-title">Workshops</h2>
         <p class="card-desc">Kransbindning och blomsterkurser i studion i Vasastan.</p>
         <span class="btn-category">Läs om workshops &rarr;</span>
       </a>
-
       <a href="/hogtider" class="category-card">
         <div class="card-img-wrap"><img src="/blomma2.jpeg" alt="Högtider" /></div>
         <h2 class="card-title">Högtider</h2>
         <p class="card-desc">Blomsterarrangemang för Jul, Midsommar, Påsk och andra högtider.</p>
         <span class="btn-category">Se högtider &rarr;</span>
       </a>
-
       <a href="/for-foretag" class="category-card">
         <div class="card-img-wrap"><img src="/blomma3.jpeg" alt="För företag" /></div>
         <h2 class="card-title">För företag</h2>
@@ -740,13 +643,11 @@
         <span class="btn-category">Företagslösningar &rarr;</span>
       </a>
     </section>
-
     <!-- SAMARBETSPARTNERS (KONSTNÄRER) -->
     <section id="samarbetspartners" class="artists-section">
       <div class="artists-inner">
         <h2 class="section-title">Våra Samarbetspartners</h2>
         <p class="section-subtitle">Lokal keramik, konst &amp; hantverk i butiken</p>
-
         <div class="artists-grid">
           <div class="artist-card">
             <div class="artist-img-wrap"><img src="/vaxt4.jpeg" alt="Stilla sinnet" /></div>
@@ -754,28 +655,24 @@
             <span class="artist-role">Handgjord keramik</span>
             <a href="mailto:keramik@solevasa.se" class="artist-email">keramik@solevasa.se</a>
           </div>
-
           <div class="artist-card">
             <div class="artist-img-wrap"><img src="/vaxt4.jpeg" alt="" /></div>
             <h3 class="artist-name">Stök keramik</h3>
             <span class="artist-role">Botaniska tryck</span>
             <a href="mailto:atelje@solevasa.se" class="artist-email">atelje@solevasa.se</a>
           </div>
-
           <div class="artist-card">
             <div class="artist-img-wrap"><img src="/vaxt2.jpeg" alt="ml.object" /></div>
             <h3 class="artist-name">Glas &amp; Form</h3>
             <span class="artist-role">Munblåsta vaser</span>
             <a href="mailto:glas@solevasa.se" class="artist-email">glas@solevasa.se</a>
           </div>
-
           <div class="artist-card">
             <div class="artist-img-wrap"><img src="/vaxt2.jpeg" alt="Linne & Textil" /></div>
             <h3 class="artist-name">Linne &amp; Textil</h3>
             <span class="artist-role">Bordslinne</span>
             <a href="mailto:textil@solevasa.se" class="artist-email">textil@solevasa.se</a>
           </div>
-
           <div class="artist-card">
             <div class="artist-img-wrap"><img src="/vaxt2.jpeg" alt="Ljusmakeriet" /></div>
             <h3 class="artist-name">Ljusmakeriet</h3>
@@ -785,7 +682,6 @@
         </div>
       </div>
     </section>
-
     <!-- KONTAKTGUIDE -->
     <section id="kontakt" class="store-details">
       <div>
@@ -793,7 +689,6 @@
         <p style="color: var(--text-muted); font-weight: 300;">
           Kontakta oss gärna för beställningar av buketter, blomsterbud, abonnemang eller konsultation inför bröllop och fest.
         </p>
-
         <ul class="contact-list">
           <li>
             <span class="contact-label">Telefon &amp; Beställning</span>
@@ -816,20 +711,17 @@
           </li>
         </ul>
       </div>
-
       <div class="contact-guide-box">
         <h3>Hur du gör en förfrågan</h3>
         <p>
           Vi hanterar alla förfrågningar personligen via mail och telefon. För snabbast service och för att vi ska kunna hjälpa dig på bästa sätt, inkludera gärna:
         </p>
-
         <ul class="guide-checklist">
           <li>Önskat datum eller leveransdag</li>
           <li>Typ av ärende (bukett, bröllop, företag eller workshop)</li>
           <li>Eventuella färgönskemål eller prisidé</li>
           <li>Ditt telefonnummer så att vi snabbt kan återkoppla</li>
         </ul>
-
         <div class="action-buttons">
           <a href="mailto:flowers@solevasa.se?subject=Förfrågan Solé Vasa" class="btn-mail-action">
             Maila oss: flowers@solevasa.se
@@ -841,7 +733,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <p>&copy; {new Date().getFullYear()} Solé Vasa &bull; FLOWER SHOP &bull; Vasastan, Göteborg</p>
   </footer>
