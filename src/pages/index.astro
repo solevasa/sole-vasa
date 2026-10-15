@@ -62,13 +62,14 @@
       gap: 0.5rem;
       width: 100%;
     }
-    .brand-logo-img {
-      height: clamp(110px, 15vw, 190px);
-      width: auto;
-      max-width: min(92vw, 620px);
-      object-fit: contain;
+   .brand-logo-img {
+      height: 110px;
+      width: 320px;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(2.2);
       display: block;
-      margin: 0.2rem auto;
+      margin: 1.5rem auto;
       transition: transform 0.25s ease;
     }
     .brand-box:hover .brand-logo-img {
